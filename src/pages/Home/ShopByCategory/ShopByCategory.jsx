@@ -17,21 +17,21 @@ const ShopByCategory = () => {
         fetch(url1)
             .then(res => res.json())
             .then(data => setPolice(data))
-            console.log(police)
+            
     }, [url1]);
     const url2 = 'http://localhost:5000/fire';
     useEffect(() => {
         fetch(url2)
             .then(res => res.json())
             .then(data => setFire(data))
-            console.log(fire)
+            
     }, [url2]);
     const url3 = 'http://localhost:5000/sports';
     useEffect(() => {
         fetch(url3)
             .then(res => res.json())
             .then(data => setSports(data))
-            console.log(fire)
+            
     }, [url3]);
     return (
 
