@@ -30,7 +30,7 @@ const NavBar = () => {
                     <Link className="btn btn-active btn-link  text-white  " to='/my-toys'>My Toys</Link>
                     <Link className="btn btn-active btn-link  text-white  " to='/add-a-toy'>Add a Toy</Link>
                     <Link className="btn btn-active btn-link  text-white  " to='/blogs'>Blogs</Link>
-                    <Link className="btn btn-active btn-link  text-white  " to='/login'>Login</Link>
+                   
                     <Link className="btn btn-active btn-link  text-white  " to='/signup'>Sign Up</Link>
 
 
