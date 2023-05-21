@@ -11,6 +11,7 @@ import Blog from "../pages/Blogs/Blog";
 import SingleToy from "../pages/SingleToy/SingleToy";
 import UpdatedToy from "../pages/Update/UpdatedToy";
 import PrivateRoute from "./PrivateRoute";
+import NotFound from "../pages/NotFound/NotFound";
 
 
 const router = createBrowserRouter([
@@ -62,12 +63,13 @@ const router = createBrowserRouter([
           path:'/blogs',
           element:<Blog></Blog>
         },
-        {
-          path:'*',
-          
-        }
+        
       ]
     },
+    {
+          path:'*',
+          element: <NotFound></NotFound>
+        }
   ]);
 
 
