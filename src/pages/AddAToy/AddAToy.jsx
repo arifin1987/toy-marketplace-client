@@ -20,7 +20,7 @@ const AddAToy = () => {
     const rating= form.rating.value;
     const quantity= form.quantity.value;
     const description= form.description.value;
-    
+    form.reset();
     const toys = {
       photo,carName,sellerName,email,subCategory,price,rating,quantity,description,_id
     }

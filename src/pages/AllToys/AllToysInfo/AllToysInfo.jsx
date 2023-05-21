@@ -5,7 +5,7 @@ const AllToysInfo = ({toy}) => {
     const{sellerName,toyImage,toyName,subcategoryName,price,availableQuantity,detailDescription, _id}=toy
     return (
         
-        <tr className='table table-compact w-full'>
+        <tr >
             
             <th>
                 

@@ -19,9 +19,7 @@ const NavBar = () => {
                     <a className=" btn btn-outline text-white text-xl">CAR <span className="text-4xl text-blue-500">P</span>LANET </a>
 
                 </div>
-                <div>
-                    <h1 className="text-blue-600 text-xl font-style: italic">CAR PLANET</h1>
-                </div>
+                
 
                 <div >
 

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const MyToysInfo = ({ mytoy }) => {
+const MyToysInfo = ({ mytoy,handleDelete }) => {
     const { _id, photo, carName, sellerName, subCategory, price, rating, quantity, description } = mytoy
     return (
 
-        <tr className='table table-compact w-full'>
+        <tr >
             
             <th>
                 
