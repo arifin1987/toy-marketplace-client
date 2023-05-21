@@ -13,7 +13,7 @@ const Gallery = () => {
         
         <div>
             <h1 className='text-center text-6xl'>Gallery</h1>
-            <div className='grid grid-cols-4 gap-4 m-6'>
+            <div className='md:grid grid-cols-4 gap-4 m-6'>
             {
             gallery.map(gall=> <img src={gall.toyImage}></img>)
            }

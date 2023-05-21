@@ -28,9 +28,9 @@ const AllToysInfo = ({toy}) => {
             <td>{detailDescription}</td>
             
             <th>
-                <PrivateRoute>
+                
                 <Link to={`/all-toys/${_id}`}><button className='btn btn-primary'>View Details</button></Link>
-                </PrivateRoute>
+                
             
             </th>
         </tr>

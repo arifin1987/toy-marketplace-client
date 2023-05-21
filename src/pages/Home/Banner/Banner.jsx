@@ -6,7 +6,7 @@ import car4 from '../../../../public/image/toy4.avif'
 
 const Banner = () => {
     return (
-        <div className="h-96 carousel carousel-vertical rounded-box bg-green-200 ">
+        <div className="h-96 carousel carousel-vertical  bg-green-200 ">
             <div className="carousel-item h-full w-full mx-auto">
                 <img className='mx-auto' src={car1} />
             </div>

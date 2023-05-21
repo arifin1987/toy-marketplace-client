@@ -46,7 +46,7 @@ const ShopByCategory = () => {
             </TabList>
 
             <TabPanel>
-                <div className='grid grid-cols-2 gap-4'>
+                <div className='md:grid grid-cols-2 gap-4'>
                 {sports.map(sport=> <SportsCar
                 
                 sport ={sport}
@@ -55,7 +55,7 @@ const ShopByCategory = () => {
             
             </TabPanel>
             <TabPanel>
-                <div className='grid grid-cols-2 gap-4'>
+                <div className='md:grid grid-cols-2 gap-4'>
                 {fire.map(fir=> <FireTruck
                 fir={fir}
                 ></FireTruck>)}
@@ -64,7 +64,7 @@ const ShopByCategory = () => {
             </TabPanel>
             
             <TabPanel >
-                <div className='grid grid-cols-2 gap-4'>
+                <div className='md:grid grid-cols-2 gap-4'>
                 {police.map(pol=> <PoliceCar
                 pol={pol}
             

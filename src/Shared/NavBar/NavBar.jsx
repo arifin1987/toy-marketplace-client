@@ -12,16 +12,17 @@ const NavBar = () => {
         .catch(error=> console.log(error));
     }
     return (
-        <div>
+        
 
-            <div className="navbar bg-lime-400 text-primary-content md:flex justify-between">
-                <div>
-                    <a className=" btn btn-outline text-white text-xl">CAR <span className="text-4xl text-blue-500">P</span>LANET </a>
+            <div className="bg-blue-300 md:flex justify-between ">
+                
+                
+                <a className=" btn btn-outline text-white m-2">CAR <span className="text-xl text-blue-500">P</span>LANET </a>
 
-                </div>
+                <h1 className="text-blue-700 text-2xl p-4">CAR PLANE<span className="text-orange-300">T</span></h1>
                 
 
-                <div >
+                <div className="m-2">
 
                     <Link className="btn btn-active btn-link  text-white  " to='/'>Home</Link>
                     <Link className="btn btn-active btn-link  text-white  " to='/all-toys'>All Toys</Link>
@@ -62,7 +63,7 @@ const NavBar = () => {
 
 
 
-        </div>
+        
     );
 };
 
