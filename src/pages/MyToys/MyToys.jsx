@@ -1,9 +1,17 @@
+import { useLoaderData } from "react-router-dom";
+import MyToysInfo from "./MyToysInfo/MyToysInfo";
 
 
 const MyToys = () => {
+    const mytoys = useLoaderData();
     return (
         <div>
-            <h2>This is my toys</h2>
+            {
+                mytoys.map(mytoy=> <MyToysInfo
+                
+                mytoy ={mytoy}
+                ></MyToysInfo>)
+            }
         </div>
     );
 };

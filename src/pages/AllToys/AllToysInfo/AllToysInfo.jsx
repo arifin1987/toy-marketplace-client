@@ -2,41 +2,34 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const AllToysInfo = ({toy}) => {
-    const{sellerName,toyName,subcategoryName,price,availableQuantity,detailDescription, _id}=toy
+    const{sellerName,toyImage,toyName,subcategoryName,price,availableQuantity,detailDescription, _id}=toy
     return (
-        <div>
-            <div className="overflow-x-auto">
-                <table className="table table-compact w-full">
-                    <thead>
-                        <tr>
-                            
-                            <th>Seller</th>
-                            <th>Toy Name</th>
-                            <th>Sub Category</th>
-                            <th>Price</th>
-                            <th>Available Quantity</th>
-                            <th>Details</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                        <tr>
-                           
-                            <td>{sellerName}</td>
-                            <td>{toyName}</td>
-                            <td>{subcategoryName}</td>
-                            <td>{price}</td>
-                            <td>{availableQuantity}</td>
-                            <Link to={`/all-toys/${_id}`}><button className='btn btn-primary'>View Details</button></Link>
-                            
-                        </tr>
-                       
-                    </tbody>
-                    
-                </table>
-            </div>
-        </div>
+        
+        <tr className='table table-compact w-full'>
+            
+            <th>
+                
+                
+            </th>
+            <td>
+                <div className="avatar">
+                    <div className="rounded w-24 h-24">
+                        {toyImage && <img src={toyImage}  />}
+                    </div>
+                </div>
+            </td>
+            
+            <td>{sellerName}</td>
+            <td>{toyName}</td>
+            <td>{subcategoryName}</td>
+            <td>${price}</td>
+            <td>{availableQuantity}</td>
+            <td>{detailDescription}</td>
+            
+            <th>
+            <Link to={`/all-toys/${_id}`}><button className='btn btn-primary'>View Details</button></Link>
+            </th>
+        </tr>
     );
 };
 
